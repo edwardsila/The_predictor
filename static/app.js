@@ -2,18 +2,18 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     // Get references to HTML elements
-    var loadPredictions = document.getElementById('loadPredictions');
+    var loadPredictionsBtn = document.getElementById('loadPredictionsBtn');
     var predictionsData = document.getElementById('predictionsData');
 
     // Mock data (replace with real data fetch logic)
     var mockPredictions = [
-        'Arsenal win the match with a score of 2-1.',
-        'saka is expected to score a hat-trick.',
+        'Team A will win the match with a score of 2-1.',
+        'Player X is expected to score a hat-trick.',
         'Over 2.5 goals are likely in this game.'
     ];
 
     // Event listener for the button click
-    loadPredictions.addEventListener('click', function () {
+    loadPredictionsBtn.addEventListener('click', function () {
         // Clear previous data
         predictionsData.innerHTML = '';
 

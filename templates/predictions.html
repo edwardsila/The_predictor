@@ -16,12 +16,15 @@
         </ul>
     </nav>
     <section>
-	    <button id="LoadPredictions">Load Predictions</button>
-	    <div id="predictionsData"></div>
+        <button id="loadPredictionsBtn">Load Predictions</button>
+        <div id="predictionsData"></div> <!-- This is where the data will be displayed -->
     </section>
     <footer>
         <p>&copy; 2023 Sports Predictor</p>
     </footer>
+
+    <!-- Link the JavaScript file -->
     <script src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 </html>
+

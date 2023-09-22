@@ -3,9 +3,24 @@
 <html>
 <head>
     <title>Predictions Page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Sports Predictions</h1>
-    <p>Here you can view and make predictions.</p>
+    <header>
+        <h1>Sports Predictions</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/predictions">Predictions</a></li>
+        </ul>
+    </nav>
+    <section>
+        <p>Here you can view and make predictions.</p>
+    </section>
+    <footer>
+        <p>&copy; 2023 Sports Predictor</p>
+    </footer>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 </html>

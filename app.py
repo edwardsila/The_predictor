@@ -6,11 +6,11 @@ app = Flask(__name__)
 # route for home page
 @app.route('/')
 def home():
-    return render_templates('home.html')
+    return render_template('home.html')
 
 @app.route('/predictions')
 def predictions():
-    return render_templates('predictions.html')
+    return render_template('predictions.html')
 
 
 if __name__ == "__main__":

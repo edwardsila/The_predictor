@@ -1,9 +1,27 @@
+// static/app.js
 
 document.addEventListener('DOMContentLoaded', function () {
+    // Get references to HTML elements
+    var loadPredictions = document.getElementById('loadPredictions');
+    var predictionsData = document.getElementById('predictionsData');
 
-	var myElement = document.getElementById('my-element');
+    // Mock data (replace with real data fetch logic)
+    var mockPredictions = [
+        'Arsenal win the match with a score of 2-1.',
+        'saka is expected to score a hat-trick.',
+        'Over 2.5 goals are likely in this game.'
+    ];
 
-	myElement.addEventListener('click', function () {
-        alert('You clicked the element!');
+    // Event listener for the button click
+    loadPredictions.addEventListener('click', function () {
+        // Clear previous data
+        predictionsData.innerHTML = '';
+
+        // Display mock predictions
+        mockPredictions.forEach(function (prediction) {
+            var predictionItem = document.createElement('p');
+            predictionItem.textContent = prediction;
+            predictionsData.appendChild(predictionItem);
+        });
     });
 });
